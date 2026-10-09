@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>ZOMBIE SURVIVAL:NIGHTFALL</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>body{margin:0;overflow:hidden;font-family:'Courier New',monospace}canvas{display:block;cursor:crosshair}</style>
+</head>
+<body>
+    <canvas id="gameCanvas"></canvas>
+    <div id="uiLayer">
+        <div id="hud">
+            <div class="hud-panel top-left">
+                <span class="label">HEALTH:</span>
+                <div class="health-bar"><div id="healthFill" class="health-fill"></div></div>
+                <span id="healthText">100%</span>
+            </div>
+            <div class="hud-panel top-right"><span class="label">WEAPON:</span><span id="weaponName">ASSAULT RIFLE</span></div>
+            <div class="hud-panel center-left"><span class="label">WAVE:</span><span id="waveDisplay" class="highlight">1</span></div>
+            <div class="hud-panel center-right"><span class="label">KILLS:</span><span id="killCount">0</span></div>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
